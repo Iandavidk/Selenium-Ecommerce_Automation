@@ -1,22 +1,3 @@
-//********************************************************************************************
-//*                                                                                          *
-//*    Guru99 eCommerce Live Project                                                         *
-//*    Day 4 - TestCase 4                                                                    *
-//*    Author: Ian Kihara Wangui  
-//*********************************************************************************************                                                                                      *
-
-//***
-
-/*      
-Test Steps:
-1. Goto http://live.techpanda.org/
-2. Click on ‘MOBILE’ menu
-3. In mobile products list , click on ‘Add To Compare’ for 2 mobiles (Sony Xperia & Iphone)
-4. Click on ‘COMPARE’ button. A popup window opens
-5. Verify the pop-up window and check that the products are reflected in it
-   Heading "COMPARE PRODUCTS" with selected products in it.
-6. Close the Popup Windows
-*/
 
 package eCommerceLive;
 
@@ -53,7 +34,7 @@ public class TestClass4 {
 	    driver.findElement(By.linkText("MOBILE")).click();
 	    Thread.sleep(1000);
 	    
-	    // 3. In mobile products list , click on ‘Add To Compare’ for 2 mobiles (Iphone & Sony Xperia)
+	    // 3. In mobile products list , click on â€˜Add To Compareâ€™ for 2 mobiles (Iphone & Sony Xperia)
 	    
 	    //note: store the title of the 2 mobiles for comparison for verification later when popup page comes up
 	    driver.findElement(By.xpath(".//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[1]/div/div[2]/ul/li[2]/a")).click();
@@ -65,7 +46,7 @@ public class TestClass4 {
 	    System.out.println("mainMobile2 = "+mainMobile2);
 	    Thread.sleep(1000);
 	    
-	    // 4. Click on ‘COMPARE’ button. A pop-up window opens	   
+	    // 4. Click on â€˜COMPAREâ€™ button. A pop-up window opens	   
 	    driver.findElement(By.xpath("//button[@title='Compare']")).click();	    
 	    Thread.sleep(1000);
 	    
