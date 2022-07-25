@@ -1,20 +1,3 @@
-//********************************************************************************************
-//*                                                                                          *
-//*    Guru99 eCommerce Live Project                                                         *
-//*    Day 1 - TestCase 1                                                                    *
-//*    Author: Ian Kihara Wangui                                                              *                                                                                      *
-
-//********************************************************************************************
-/*  
-
-Test Steps
-Step 1. Goto http://live.techpanda.org/
-Step 2. Verify Title of the page
-Step 3. Click on ‘MOBILE’ menu
-Step 4. Verify Title of the page
-Step 5. In the list of all mobile , select ‘SORT BY’ dropdown as ‘name’
-Step 6. Verify all products are sorted by name
-*/
 
 package eCommerceLive;
 
@@ -57,10 +40,10 @@ public class TestClass1 {
          String actualTitle = driver.findElement(By.cssSelector("h2")).getText();;
          Assert.assertEquals(actualTitle, expectedTitle);
          
-   // Step 3. Click on ‘MOBILE’ menu
+   // Step 3. Click on â€˜MOBILEâ€™ menu
  	    driver.findElement(By.linkText("MOBILE")).click();	
  	    
-   // Step 4. In the list of all mobile , select ‘SORT BY’ dropdown as ‘name’		
+   // Step 4. In the list of all mobile , select â€˜SORT BYâ€™ dropdown as â€˜nameâ€™		
  	    new Select(driver.findElement(By.cssSelector("select[title=\"Sort By\"]"))).selectByVisibleText("Name");
  	    
    // Step 5. Verify all products are sorted by name
